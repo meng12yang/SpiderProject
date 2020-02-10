@@ -68,10 +68,10 @@ def getMovieTop_douban():
     topDict = {}
     titleList = topObj.select(".hd a")     #标题列表
     msgList = topObj.select(".info .bd p")       #内容列表
-    for i in range(10):
-        topDict[titleList[i].get_text().strip()] = msgList[i].get_text().strip()
+    for i in range(len(titleList)):
+        topDict[titleList[i].get_text().strip().replace("\n", "").replace(" ", "")] = msgList[i].get_text().strip().replace(" ", "")
 
-    # 返回视频榜单字典（title：href）
+    # 返回视频榜单字典（title：msg）
     return topDict
 
 if __name__ == '__main__':

@@ -36,21 +36,18 @@ class MovieInfoPage(object):
 
         #内容
         #腾讯视频
-        temp = 1
         for key in self.qqMovieDict:
             keyStr = StringVar()
             keyStr.set(key)
             Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
                    command=lambda :self.open_url(self.qqMovieDict[key])).pack(pady=6)
         #爱奇艺
-        temp = 1
         for key in self.iqiyiMovieDict:
             keyStr = StringVar()
             keyStr.set(key)
             Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
                    command=lambda: self.open_url(self.iqiyiMovieDict[key])).pack(pady=6)
         #哔哩哔哩
-        temp = 1
         for key in self.bilibiliMovieDict:
             keyStr = StringVar()
             keyStr.set(key)
@@ -73,7 +70,6 @@ class MovieInfoPage(object):
         top.geometry("%dx%d" % (500, 600))
 
         Label(top, text="虎牙直播视频", font=("华文行楷", 15), fg="blue").pack(pady=20)
-        temp = 1
         for key in huyaMovieDict:
             keyStr = StringVar()
             keyStr.set(key)
@@ -88,7 +84,6 @@ class MovieInfoPage(object):
         top.geometry("%dx%d" % (500, 600))
 
         Label(top, text="斗鱼直播视频", font=("华文行楷", 15), fg="blue").pack(pady=20)
-        temp = 1
         for key in douyuMovieDict:
             keyStr = StringVar()
             keyStr.set(key)

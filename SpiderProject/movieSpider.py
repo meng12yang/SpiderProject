@@ -34,7 +34,7 @@ def getMovieMessage_iqiyi():
     movieDict = {}
     movieList = startObj.find_all('a', attrs={'class': 'side-link'})
     for i in range(len(movieList)):
-        movieDict[movieList[i].get_text().strip()] = movieList[i].get("href")
+        movieDict[movieList[i].get_text().strip().replace("\n", "")] = movieList[i].get("href")
 
     # 返回视频字典（title:href）
     return movieDict
@@ -50,9 +50,13 @@ def getMovieMessage_youku():
     startObj.encoding = 'utf-8'
     startObj = BeautifulSoup(startObj.text, 'html.parser')
     movieDict = {}
-    movieList = startObj.find_all('a', attrs={'class': 'swiper-slide'})
+    movieList = startObj.select("div.pack_short_title a")
     for i in range(len(movieList)):
         movieDict[movieList[i].get_text().strip()] = "https:" + movieList[i].get("href")
+        # if i<12:
+        #     continue
+        # if i>17:
+        #     break
 
     # 返回视频字典（title:href）
     return movieDict
@@ -89,7 +93,7 @@ def getMovieMessage_huya():
     movieDict = {}
     movieList = startObj.find_all('a', attrs={'class': 'remen-item new-clickstat'})
     for i in range(len(movieList)):
-        movieDict[movieList[i].get_text().strip()] = movieList[i].get("href")
+        movieDict[movieList[i].get_text().strip().replace("\n", "-")] = movieList[i].get("href")
 
     # 返回视频字典（title:href）
     return movieDict
@@ -115,7 +119,7 @@ def getMovieMessage_douyu():
 if __name__ == '__main__':
     # getMovieMessage_QQ()
     # getMovieMessage_iqiyi()
-    # getMovieMessage_youku()
+    getMovieMessage_youku()
     # getMovieMessage_bilibili()
     # getMovieMessage_huya()
-    getMovieMessage_douyu()
+    # getMovieMessage_douyu()

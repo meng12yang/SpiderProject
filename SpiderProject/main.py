@@ -1,8 +1,8 @@
 from tkinter import *
-from MusicTopPage import *
+from MovieInfoPage import *
 
 root = Tk()
 root.title("'爬'你所享")
-MusicTopPage(root)
+MovieInfoPage(root)
 root.mainloop()
 

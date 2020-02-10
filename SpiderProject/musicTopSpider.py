@@ -118,6 +118,6 @@ def getMusicTop_kugou():
 if __name__ == '__main__':
     # getMusicTop_QQ()
     # getMusicTop_kuwo()
-    # getMusicTop_xiami()
+    getMusicTop_xiami()
     # getMusicTop_douban()
-    getMusicTop_kugou()
+    # getMusicTop_kugou()

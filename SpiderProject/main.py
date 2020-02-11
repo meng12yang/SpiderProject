@@ -1,8 +1,10 @@
 from tkinter import *
-from MovieTopPage import *
+from NewsInfoPage import *
+from MovieInfoPage import *
 
 root = Tk()
 root.title("'爬'你所享")
-MovieTopPage(root)
+NewsInfoPage(root)
+# MovieInfoPage(root)
 root.mainloop()
 

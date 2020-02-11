@@ -34,23 +34,134 @@ class MovieTopPage(object):
 
         # 内容
         # 腾讯视频
-        for key in self.qqTopDict:
-            keyStr = StringVar()
-            keyStr.set(key)
-            Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-                   command=lambda: self.open_url(self.qqTopDict[key])).pack(pady=6)
+        keys1 = list(self.qqTopDict.keys())
+        values1 = list(self.qqTopDict.values())
+        keyStr = StringVar()
+        keyStr.set(keys1[0])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[0])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[1])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[1])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[2])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[2])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[3])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[3])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[4])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[4])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[5])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[5])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[6])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[6])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[7])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[7])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[8])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[8])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys1[9])
+        Button(self.qqPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values1[9])).pack(pady=6)
         #爱奇艺
-        for key in self.iqiyiDict:
-            keyStr = StringVar()
-            keyStr.set(key)
-            Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-                   command=lambda: self.open_url(self.iqiyiDict[key])).pack(pady=6)
+        keys2 = list(self.iqiyiDict.keys())
+        values2 = list(self.iqiyiDict.values())
+        keyStr = StringVar()
+        keyStr.set(keys2[0])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[0])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[1])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[1])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[2])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[2])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[3])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[3])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[4])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[4])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[5])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[5])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[6])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[6])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[7])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[7])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[8])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[8])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys2[9])
+        Button(self.iqiyiPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values2[9])).pack(pady=6)
         #哔哩哔哩
-        for key in self.bilibiliDict:
-            keyStr = StringVar()
-            keyStr.set(key)
-            Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-                   command=lambda: self.open_url(self.bilibiliDict[key])).pack(pady=6)
+        keys = list(self.bilibiliDict.keys())
+        values = list(self.bilibiliDict.values())
+        keyStr = StringVar()
+        keyStr.set(keys[0])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[0])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[1])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[1])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[2])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[2])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[3])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[3])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[4])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[4])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[5])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[5])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[6])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[6])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[7])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[7])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[8])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[8])).pack(pady=6)
+        keyStr = StringVar()
+        keyStr.set(keys[9])
+        Button(self.bilibiliPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
+               command=lambda: self.open_url(values[9])).pack(pady=6)
 
         #豆瓣电影榜单标签绑定点击事件
         doubanLabel.bind("<Button-1>", self.getTop_douban)

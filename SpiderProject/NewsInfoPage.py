@@ -40,79 +40,79 @@ class NewsInfoPage(object):
 
         #内容
         #新浪新闻
-        keys = list(self.sinaDict.keys())
-        values = list(self.sinaDict.values())
+        keys1 = list(self.sinaDict.keys())
+        values1 = list(self.sinaDict.values())
         keyStr = StringVar()
-        keyStr.set(keys[0])
+        keyStr.set(keys1[0])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-                command=lambda :self.open_url(values[0])).pack(pady=6)
+                command=lambda :self.open_url(values1[0])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[1])
+        keyStr.set(keys1[1])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[1])).pack(pady=6)
+               command=lambda: self.open_url(values1[1])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[2])
+        keyStr.set(keys1[2])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[2])).pack(pady=6)
+               command=lambda: self.open_url(values1[2])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[3])
+        keyStr.set(keys1[3])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[3])).pack(pady=6)
+               command=lambda: self.open_url(values1[3])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[4])
+        keyStr.set(keys1[4])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[4])).pack(pady=6)
+               command=lambda: self.open_url(values1[4])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[5])
+        keyStr.set(keys1[5])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[5])).pack(pady=6)
+               command=lambda: self.open_url(values1[5])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[6])
+        keyStr.set(keys1[6])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[6])).pack(pady=6)
+               command=lambda: self.open_url(values1[6])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[7])
+        keyStr.set(keys1[7])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[7])).pack(pady=6)
+               command=lambda: self.open_url(values1[7])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[8])
+        keyStr.set(keys1[8])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[8])).pack(pady=6)
+               command=lambda: self.open_url(values1[8])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[9])
+        keyStr.set(keys1[9])
         Button(self.sinaPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[9])).pack(pady=6)
+               command=lambda: self.open_url(values1[9])).pack(pady=6)
         #凤凰网新闻
-        keys = list(self.ifengDict.keys())
-        values = list(self.ifengDict.values())
+        keys2 = list(self.ifengDict.keys())
+        values2 = list(self.ifengDict.values())
         keyStr = StringVar()
-        keyStr.set(keys[0])
+        keyStr.set(keys2[0])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-                command=lambda :self.open_url(values[0])).pack(pady=6)
+                command=lambda :self.open_url(values2[0])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[1])
+        keyStr.set(keys2[1])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[1])).pack(pady=6)
+               command=lambda: self.open_url(values2[1])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[2])
+        keyStr.set(keys2[2])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[2])).pack(pady=6)
+               command=lambda: self.open_url(values2[2])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[3])
+        keyStr.set(keys2[3])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[3])).pack(pady=6)
+               command=lambda: self.open_url(values2[3])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[4])
+        keyStr.set(keys2[4])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[4])).pack(pady=6)
+               command=lambda: self.open_url(values2[4])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[5])
+        keyStr.set(keys2[5])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[5])).pack(pady=6)
+               command=lambda: self.open_url(values2[5])).pack(pady=6)
         keyStr = StringVar()
-        keyStr.set(keys[6])
+        keyStr.set(keys2[6])
         Button(self.ifengPage, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
-               command=lambda: self.open_url(values[6])).pack(pady=6)
+               command=lambda: self.open_url(values2[6])).pack(pady=6)
         #澎湃新闻
         keys = list(self.pengpaiDict.keys())
         values = list(self.pengpaiDict.values())

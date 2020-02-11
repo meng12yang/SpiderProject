@@ -91,7 +91,7 @@ def getMovieMessage_huya():
     startObj.encoding = 'utf-8'
     startObj = BeautifulSoup(startObj.text, 'html.parser')
     movieDict = {}
-    movieList = startObj.find_all('a', attrs={'class': 'remen-item new-clickstat'})
+    movieList = startObj.find_all('a', attrs={'class': 'remen-item j_game-classify-remen-item'})
     for i in range(len(movieList)):
         movieDict[movieList[i].get_text().strip().replace("\n", "-")] = movieList[i].get("href")
 
@@ -119,7 +119,7 @@ def getMovieMessage_douyu():
 if __name__ == '__main__':
     # getMovieMessage_QQ()
     # getMovieMessage_iqiyi()
-    getMovieMessage_youku()
+    # getMovieMessage_youku()
     # getMovieMessage_bilibili()
-    # getMovieMessage_huya()
+    getMovieMessage_huya()
     # getMovieMessage_douyu()

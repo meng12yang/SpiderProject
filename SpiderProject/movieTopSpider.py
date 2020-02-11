@@ -50,7 +50,7 @@ def getMovieTop_bilibili():
     topDict = {}
     topList = topObj.select(".info a.title")
     for i in range(10):
-        topDict[topList[i].get_text()] = "https:" + topList[i].get("href")
+        topDict[topList[i].get_text()] = topList[i].get("href")
 
     # 返回视频榜单字典（title：href）
     return topDict

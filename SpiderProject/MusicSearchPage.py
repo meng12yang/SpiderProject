@@ -14,6 +14,7 @@ class MusicSearchPage(object):
         self.page = Frame(self.root)
         self.page.pack()
         label = Label(self.page, text="音乐搜索", font=("华文行楷", 20), fg="blue")
+
         label.grid(row=0, column=0, columnspan=2, pady=50)
         label.focus()
         Entry(self.page, textvariable=self.keyword, bd=4, width=35).grid(row=1, column=0)

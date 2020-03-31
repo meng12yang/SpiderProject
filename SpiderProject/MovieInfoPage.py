@@ -2,6 +2,8 @@ from tkinter import *
 from movieSpider import *
 import webbrowser
 
+
+
 #视频详情页
 class MovieInfoPage(object):
     def __init__(self, master=None):
@@ -274,5 +276,3 @@ class MovieInfoPage(object):
         keyStr.set(keys[11])
         Button(top, textvariable=keyStr, font=("华文行楷", 12), activebackground="red",
                command=lambda: self.open_url(values[11])).pack(pady=6)
-
-

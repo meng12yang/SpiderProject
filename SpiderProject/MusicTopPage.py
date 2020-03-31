@@ -130,3 +130,4 @@ class MusicTopPage(object):
             Label(top, textvariable=keyStr, font=("华文行楷", 12)).grid(row=temp, column=0, stick=E)
             Label(top, textvariable=valueStr, font=("华文行楷", 12)).grid(row=temp, column=1, stick=W, padx=10)
             temp += 1
+
